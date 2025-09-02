@@ -3,45 +3,120 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Hi, I'm Your Name</title>
+  <title>Ashley Volans — Portfolio</title>
+  <meta name="description" content="Ashley Volans — supply chain & analytics. Power BI, Excel/VBA, SharePoint, SQL, Python. Johnson & Johnson internships, University of Maryland.">
   <link rel="stylesheet" href="styles.css"/>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Ashley Volans",
+    "jobTitle":"Supply Chain & Analytics",
+    "email":"mailto:ashleyvolans14@gmail.com",
+    "address":{"@type":"PostalAddress","addressLocality":"Philadelphia","addressRegion":"PA"},
+    "url":"https://yourusername.github.io/",
+    "sameAs":["https://www.linkedin.com/in/ashley-volans-","https://github.com/yourusername"]
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Your Name</h1>
-    <p>I build data dashboards / web apps / analyses.</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Hi, I’m <span class="accent">Ashley Volans</span>.</h1>
+      <p class="tagline">I turn messy ops data into clear decisions — <strong>Power BI</strong>, <strong>Excel/VBA</strong>, <strong>SQL</strong>, <strong>Python</strong>, <strong>SharePoint</strong>.</p>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="wrap">
     <section id="projects">
-      <h2>Projects</h2>
-      <article>
-        <h3>Comparator Delivery Dashboard</h3>
-        <p>Power BI + SharePoint data → trends on OTD and lead time.</p>
-        <a href="https://github.com/yourusername/yourproject" target="_blank">Code</a>
+      <h2>Selected Projects</h2>
+
+      <article class="card">
+        <h3>Comparator Clinical Supply Dashboard (Power BI)</h3>
+        <p>Analyzed <strong>500+ global comparator orders</strong>, set a <strong>99-day baseline lead time</strong>, and launched a new performance management process to improve supplier OTD and data accuracy.</p>
+        <div class="chips">
+          <span>Power BI</span><span>SQL</span><span>Operations Analytics</span>
+        </div>
+        <p class="muted">Case study coming soon • Code to be published later</p>
       </article>
-      <!-- add more projects -->
+
+      <article class="card">
+        <h3>Savings Visualization Tool (Excel + VBA)</h3>
+        <p>Built a VBA tool that visualized <strong>$2M budgeted vs. actual savings</strong> to enable real-time storytelling for leadership.</p>
+        <div class="chips">
+          <span>Excel</span><span>VBA</span><span>Visualization</span>
+        </div>
+        <p class="muted">Case study coming soon • Code to be published later</p>
+      </article>
+
+      <article class="card">
+        <h3>SharePoint Cleanup & Standard Work</h3>
+        <p>Streamlined <strong>7,500+ documents</strong> using Lean tools (VoC, stakeholder plan, SoW), reducing broken links/docs by <strong>50%</strong> and enabling a smooth handoff for <strong>100</strong> global team members.</p>
+        <div class="chips">
+          <span>SharePoint</span><span>Lean</span><span>Process Design</span>
+        </div>
+        <p class="muted">Write-up coming soon</p>
+      </article>
+
+      <article class="card">
+        <h3>IBP Forecasting & Portfolio Insights (Power BI)</h3>
+        <p>Unified <strong>20+ datasets</strong> to clarify forecasting, segmentation, and variance; helped drive leadership decisions and supported a <strong>Lean Six Sigma Yellow Belt</strong> certification.</p>
+        <div class="chips">
+          <span>Power BI</span><span>IBP</span><span>Storytelling</span>
+        </div>
+        <p class="muted">Case study coming soon</p>
+      </article>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Short bio, tools (Power BI, Python, Excel/VBA, Django), and what you’re seeking.</p>
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <h3>Clinical Supply Intern — Johnson & Johnson Innovative Medicine</h3>
+        <p class="meta">Horsham, PA • May 2025 – Aug 2025</p>
+        <ul>
+          <li>Built a Power BI dashboard for 500+ orders; established a 99-day baseline lead time and kicked off a supplier OTD program.</li>
+          <li>Designed an Excel/VBA savings tool visualizing ~$2M; enabled real-time narrative reporting.</li>
+          <li>Streamlined 7,500+ SharePoint docs with Lean methods, cutting broken links/docs by ~50%.</li>
+          <li>Analyzed 420k+ inventory rows across 10+ warehouses; supported destruction/savings process.</li>
+          <li>Led a 10-person intern team to deliver a 50+ attendee philanthropic event.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Integrated Business Planning Intern — Johnson & Johnson Innovative Medicine</h3>
+        <p class="meta">Titusville, NJ • May 2024 – Oct 2024</p>
+        <ul>
+          <li>Recommended delisting 11 of 80 SKUs; approved and yielded multi-million-dollar cash-flow impact.</li>
+          <li>Consolidated 20+ datasets into a single Power BI tool for forecasting and segmentation.</li>
+          <li>Earned Lean Six Sigma Yellow Belt; organized Credo & engagement initiatives.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Employer Relations & Events Intern — Smith School of Business</h3>
+        <p class="meta">College Park, MD • Jan 2024 – Present</p>
+        <ul>
+          <li>Coordinated recruiting events for 75+ students and top employers; liaison between teams.</li>
+          <li>Managed schedules, comms, and resources for coaching staff.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><a href="mailto:you@email.com">you@email.com</a> ·
-         <a href="https://www.linkedin.com/in/yourhandle" target="_blank">LinkedIn</a> ·
-         <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
-    </section>
-  </main>
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>University of Maryland — College Park</strong> (Robert H. Smith School of Business)<br/>
+      BS Double Major: Supply Chain Management, Operations & Business Analytics; Minor: Sustainability • GPA: 3.8 • Anticipated May 2026</p>
+      <details>
+        <summary>Relevant Coursework</summary>
+        <
 
-  <footer><small>© <span id="y"></span> Your Name</small></footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-</body>
-</html>
