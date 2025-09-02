@@ -6,10 +6,51 @@ a { color:#111; text-underline-offset: 2px; }
 img { max-width:100%; height:auto; display:block; }
 
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
-.site-header { border-bottom: 1px solid var(--border); background: #fafbff; }
-.site-header .wrap { padding: 48px var(--pad); text-align: center; }
-h1 { font-size: clamp(28px, 4vw, 44px); margin:0 0 8px; }
-.accent { color: var(--accent); }
+/* Header background */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: #ffe6f0; /* light pink */
+}
+
+/* Header layout grid */
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px; /* left text, right photo */
+  align-items: center;
+  gap: 32px;
+  padding: 48px var(--pad);
+}
+
+/* Header text styling */
+.header-text {
+  text-align: left;
+}
+
+h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  margin: 0 0 8px;
+  font-weight: 400; /* "Hi, I’m" regular */
+}
+
+/* Style only the name */
+.accent {
+  color: #000;      /* black */
+  font-weight: 700; /* bold */
+}
+
+/* Headshot styling */
+.header-photo img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 16px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 800px) {
+  .header-gr
+
 .tagline { margin: 0 auto 14px; max-width: 760px; font-size: 18px; }
 .nav a { display:inline-block; margin: 0 8px; padding: 6px 10px; border-radius: 999px; text-decoration:none; border:1px solid transparent; }
 .nav a:hover { border-color: var(--border); background: #fff; }
