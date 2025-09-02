@@ -48,3 +48,42 @@ details[open] { background:#fdfdff; }
   .site-footer { border-top-color:#1c2035; }
   .muted { color:#9aa3b2; }
 }
+.course-with-preview {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px 16px;
+  align-items: start;
+  margin: 10px 0;
+}
+.course-with-preview .course-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.course-with-preview .dot { opacity: .5; }
+
+.mini-pdf {
+  width: 260px;  /* small thumbnail */
+  height: 170px;
+  border: 1px solid var(--border, #e9e9e9);
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
+}
+.mini-pdf iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .course-with-preview {
+    grid-template-columns: 1fr;
+  }
+  .mini-pdf {
+    width: 100%;
+    height: 220px;
+  }
+}
