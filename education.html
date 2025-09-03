@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Education — Ashley Volans</title>
+  <meta name="description" content="Education and coursework for Ashley Volans.">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-grid">
+      <div class="header-text">
+        <h1>Hi, I’m <span class="accent">Ashley Volans</span>.</h1>
+        <p class="tagline">I turn messy ops data into clear decisions — <strong>Power BI</strong>, <strong>Excel/VBA</strong>, <strong>SQL</strong>, <strong>Python</strong>, <strong>SharePoint</strong>.</p>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="education.html" aria-current="page">Education</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="header-photo">
+        <img src="headshot.jpg" alt="Ashley Volans headshot">
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h2>Education</h2>
+    <p><strong>University of Maryland — College Park</strong> (Robert H. Smith School of Business)<br>
+    BS: Supply Chain Management & Operations/Business Analytics • Minor: Sustainability</p>
+
+    <h3>Relevant Coursework</h3>
+    <ul>
+      <li>Data Modeling in Business (RStudio regression)</li>
+      <li>Information Systems (Excel, Python, Tableau)</li>
+
+      <li class="course-with-preview">
+        <div class="course-line">
+          <span>Intermodal Transportation SCM</span>
+          <span class="dot">•</span>
+          <a href="https://www.intermodal.org/intermodalexpo" target="_blank" rel="noopener">
+            IANA Intermodal Conference
+          </a>
+          <span class="muted">
+            (insights from industry leaders in security, AI, and logistics)
+          </span>
+          <span class="dot">•</span>
+          <span>IANA Case Competition</span>
+        </div>
+
+        <!-- Mini inline preview of your deck -->
+        <a class="mini-pdf"
+           href="Copy%20of%20478G_IANA%20Case%20Comp.pptx.pdf"
+           target="_blank" rel="noopener" title="Open IANA Case Competition deck">
+          <iframe
+            src="Copy%20of%20478G_IANA%20Case%20Comp.pptx.pdf"
+            loading="lazy"
+            aria-label="IANA Case Competition deck preview">
+          </iframe>
+        </a>
+      </li>
+    </ul>
+
+    <h3>Resume</h3>
+    <p><a class="btn" href="Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></p>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><small>© <span id="y"></span> Ashley Volans</small></div></footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
